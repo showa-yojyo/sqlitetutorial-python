@@ -1,3 +1,4 @@
+import sys
 import sqlite3
 from sqlite3 import Error
 
@@ -16,4 +17,4 @@ def create_connection(db_file):
 
 
 if __name__ == '__main__':
-    create_connection(r"db/pythonsqlite.db")
+    create_connection(sys.argv[1])
